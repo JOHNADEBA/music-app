@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.music {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  color: #fff;
+  background: royalblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1rem;
+  padding-left: 33px;
+}
+
+header .logo {
+  padding: 20px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header .heading {
+  justify-self: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.show-vib {
+  height: 40vh;
+}
+
+.keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 13vh;
+  width: 100%;
+}
+
+.keyboard div {
+  width: 100px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.key1 {
+  background-color: saddlebrown;
+}
+
+.key2 {
+  background-color: rgba(131, 139, 19, 0.966);
+}
+
+.key3 {
+  background-color: rgba(77, 139, 19, 0.966);
+}
+
+.key4 {
+  background-color: #37138b;
+}
+
+.key5 {
+  background-color: #87138b;
+}
+
+.key6 {
+  background-color: #13798b;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}
+
+.show-vib > div {
+  height: 50px;
+  width: 40px;
+  z-index: -1;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
